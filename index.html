@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./css/index.css">
+  <!-- <link rel="stylesheet" href="css/A.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./bootstrap4.6/bootstrap-4.6.2-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="Boostrap4/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="js/angular.min.js"></script>
+  <script src="js/angular-route.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/js.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/A.css">
+</head>
+
+<body ng-app="myApp" ng-controller="appCtrl">
+
+
+  <div ng-include="'header.html'"></div>
+  <div ng-view></div>
+  <div ng-include="'footer.html'"></div>
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="./bootstrap4.6/bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/z.js"></script>
+  <script>eval(mod_pagespeed_YYCwSj$83H);</script>
+  <script>eval(mod_pagespeed_fUKQzxht9j);</script>
+  <script>eval(mod_pagespeed_lpntivnFUb);</script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194"
+    integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw=="
+    data-cf-beacon='{"rayId":"73928b038ffec969","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.6.0","si":100}'
+    crossorigin="anonymous"></script>
+  <script>
+
+    // alert(localStorage.getItem("login"));
+    function register() {
+      var name = document.getElementById("name").value;
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      var cfpassword = document.getElementById("cfpassword").value;
+      var account = {
+        "name": name,
+        "username": username,
+        "password": password
+      }
+      if (password == cfpassword) {
+        localStorage.setItem("use", JSON.stringify(account));
+        alert("Register Success")
+      } else {
+        alert("cf password is incorrect")
+      }
+
+    }
+
+  </script>
+</body>
+
+</html>

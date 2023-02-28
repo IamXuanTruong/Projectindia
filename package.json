@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "json-server": "^0.17.0",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "@angular/cli": "^14.1.2"
+  }
+}
